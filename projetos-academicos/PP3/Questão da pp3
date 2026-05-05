@@ -1,0 +1,27 @@
+1.	Construa o programa que calcule a média aritmética dos números pares e a média aritmética
+dos números ímpares. O usuário fornecerá os valores de entrada que pode ser um número qualquer
+par ou ímpar. A condição de saída será o número 0 (zero).
+Na tela de saída, mostre também a quantidade total de números digitados e a soma total de
+números digitados.
+
+2.	Desenvolva o programa que leia vários valores reais e no final mostre as seguintes
+informações:
+A quantidade de valores digitados;
+A soma dos valores digitados;
+A média aritmética dos valores digitados;
+O maior valor digitado;
+O menor valor digitado;
+E a quantidade de valores digitados maior ou igual a 50.
+
+3.	Em uma eleição presidencial, existem três candidatos. Os votos são informados através de
+código. Os dados utilizados para escrutinagem obedecem à seguinte codificação:
+1, 2, 3 - voto dos respectivos candidatos;
+5 - voto nulo;					6 - voto em branco;
+Elabore o programa que calcule o total de votos de cada candidato, total de votos nulos, total
+de votos em branco, percentual de votos nulos e percentual de votos em branco.
+
+4.	Escreva o programa que leia o salário dos funcionários de uma empresa e calcule quantos
+ ganham menos que cinco salários mínimos, quantos estão na faixa de cinco (inclusive) até
+ dez (exclusive) e quantos ganham dez ou mais salários mínimos. O valor do salário mínimo
+ será fornecido pelo usuário. Na tela de saída, além da quantidade de funcionários em cada
+  faixa salarial, informe também o valor total da folha de pagamento da empresa.
