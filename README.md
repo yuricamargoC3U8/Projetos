@@ -6,7 +6,7 @@ Repositório onde armazeno meus projetos escolares e pessoais.
 
 ##  Sobre
 
-Este repositório contém uma coleção de meus projetos acadêmicos e pessoais desenvolvidos durante minha jornada de aprendizado em programação. Aqui você encontrará desde desafios de bootcamp até projetos independentes, com foco em versionamento, colaboração e boas práticas de desenvolvimento.
+Este repositório contém uma coleção de meus projetos acadêmicos e pessoais desenvolvidos durante minha jornada de aprendizado em programação. Aqui você encontrará desde desafios de bootcamp[...]
 
 ---
 
@@ -15,7 +15,7 @@ Este repositório contém uma coleção de meus projetos acadêmicos e pessoais 
 ```
 Projetos/
 ├── projetos-academicos/    # Projetos desenvolvidos durante cursos e bootcamps
-│   ├── PP1/ ... PP5/       # Provas Práticas (1 a 5)
+│   ├── PP1/ ... PP6/       # Provas Práticas (1 a 6)
 │   ├── CorreçãoProvaReal/  # Revisão e correção de provas
 │   └── EXERCÍCIOS .../     # Listas de exercícios por tópico
 ├── docs/                   # Documentação adicional
@@ -34,6 +34,7 @@ Projetos/
 - **[PP3](./projetos-academicos/PP3/)** - Terceira Prova Prática
 - **[PP4](./projetos-academicos/PP4%2028-04/)** - Quarta Prova Prática
 - **[PP5](./projetos-academicos/PP5/)** - Quinta Prova Prática
+- **[PP6](./projetos-academicos/PP6/)** - Sexta Prova Prática
 
 ### Revisão e Correção
 - **[CorreçãoProvaReal](./projetos-academicos/CorreçãoProvaReal/)** - Revisão de provas e correções
