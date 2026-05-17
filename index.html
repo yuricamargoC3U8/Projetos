@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio de Projetos Acadêmicos e Pessoais de Yuri Camargo">
     <meta http-equiv="cache-control" content="max-age=0, no-cache, no-store, must-revalidate">
-    <title>Portfólio - Yuri Camargo</title>
+    <title>Portfólio - Yuri Camargo | Projetos Acadêmicos e Pessoais</title>
     <style>
         * {
             margin: 0;
@@ -28,7 +28,7 @@
         }
 
         header {
-            background: #1a1a1a;
+            background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
             border-radius: 10px;
             padding: 40px 30px;
             margin-bottom: 40px;
@@ -49,6 +49,15 @@
             margin-bottom: 20px;
         }
 
+        .description {
+            color: #b0b0b0;
+            font-size: 1em;
+            margin-bottom: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .nav-buttons {
             display: flex;
             gap: 15px;
@@ -59,21 +68,25 @@
 
         .btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 24px;
             background: #4a9eff;
             color: #000;
             text-decoration: none;
             border-radius: 5px;
-            transition: background 0.3s ease;
-            font-weight: 500;
+            transition: background 0.3s ease, transform 0.2s ease;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
         }
 
         .btn:hover {
             background: #2a7edd;
+            transform: translateY(-2px);
         }
 
         .btn-secondary {
             background: #4a2a6b !important;
+            color: #ffffff !important;
         }
 
         .btn-secondary:hover {
@@ -97,6 +110,17 @@
             padding-bottom: 10px;
         }
 
+        h3 {
+            color: #4a9eff !important;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        h3:first-child {
+            margin-top: 0;
+        }
+
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -117,14 +141,16 @@
             box-shadow: 0 10px 20px rgba(74, 158, 255, 0.3);
         }
 
-        .project-card h3 {
+        .project-card h4 {
             color: #4a9eff;
             margin-bottom: 10px;
+            font-size: 1.1em;
         }
 
         .project-card p {
             color: #b0b0b0;
             font-size: 0.95em;
+            line-height: 1.5;
         }
 
         .project-link {
@@ -132,7 +158,7 @@
             margin-top: 10px;
             color: #4a9eff;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
             transition: color 0.3s ease;
         }
 
@@ -151,7 +177,7 @@
         .tech-tag {
             background: #2a2a2a;
             color: #4a9eff;
-            padding: 5px 12px;
+            padding: 6px 14px;
             border-radius: 20px;
             font-size: 0.85em;
             border: 1px solid #4a9eff;
@@ -180,7 +206,7 @@
         .social-links a {
             color: #4a9eff;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
             transition: color 0.3s ease;
         }
 
@@ -193,8 +219,39 @@
             line-height: 1.8;
         }
 
-        h3 {
-            color: #4a2a6b !important;
+        .about-content p {
+            margin-bottom: 15px;
+        }
+
+        .about-content strong {
+            color: #4a9eff;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-card {
+            background: #252525;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #4a9eff;
+            text-align: center;
+        }
+
+        .stat-number {
+            color: #4a9eff;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .stat-label {
+            color: #999;
+            font-size: 0.9em;
+            margin-top: 5px;
         }
 
         @media (max-width: 768px) {
@@ -214,6 +271,10 @@
                 width: 100%;
                 text-align: center;
             }
+
+            .stats {
+                grid-template-columns: 1fr 1fr;
+            }
         }
     </style>
 </head>
@@ -222,29 +283,44 @@
         <header>
             <h1>Portfólio de Projetos</h1>
             <p class="subtitle">Yuri Camargo</p>
-            <p style="color: #666; margin-bottom: 20px;">Desenvolvedor | Estudante de Programação | Bootcamp</p>
+            <p class="description">Repositório onde armazeno meus projetos escolares e pessoais</p>
             <div class="nav-buttons">
-                <a href="https://github.com/yuricamargoC3U8/Projetos" class="btn">Ver no GitHub</a>
-                <a href="https://www.linkedin.com/in/yuri-goelzer-de-camargo-466bb13b4/?skipRedirect=true" class="btn btn-secondary">LinkedIn</a>
+                <a href="https://github.com/yuricamargoC3U8/Projetos" class="btn">🐙 Ver no GitHub</a>
+                <a href="https://www.linkedin.com/in/yuri-goelzer-de-camargo-466bb13b4/?skipRedirect=true" class="btn btn-secondary">💼 LinkedIn</a>
             </div>
         </header>
 
         <section id="sobre">
             <h2>Sobre Mim</h2>
             <div class="about-content">
-                <p>Olá! Eu sou Yuri Camargo, um estudante apaixonado por programação e desenvolvimento de software. Este portfólio apresenta meus projetos acadêmicos e pessoais, desenvolvidos com foco em boas práticas de versionamento, colaboração e código limpo.</p>
-                <p style="margin-top: 15px;">Atualmente estou aprendendo <strong>Python</strong> e as melhores práticas de desenvolvimento com <strong>Git e GitHub</strong>. Tenho interesse em desenvolvimento backend e sou um entusiasta de resolução de problemas através da programação.</p>
+                <p>Olá! Eu sou <strong>Yuri Camargo</strong>, um estudante apaixonado por programação e desenvolvimento de software. Este portfólio apresenta meus projetos acadêmicos e pessoais, desenvolvidos durante minha jornada de aprendizado.</p>
+                <p>Atualmente estou aprendendo <strong>Python</strong> e as melhores práticas de desenvolvimento com <strong>Git e GitHub</strong>. Tenho interesse em desenvolver aplicações robustas e bem estruturadas, sempre focando na qualidade do código e em boas práticas de engenharia de software.</p>
+                <p>Neste repositório, você encontrará desde desafios de bootcamp até exercícios práticos e projetos pessoais, todos refletindo meu compromisso com o aprendizado contínuo.</p>
+            </div>
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">12+</div>
+                    <div class="stat-label">Projetos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">61.9%</div>
+                    <div class="stat-label">Python</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">38.1%</div>
+                    <div class="stat-label">HTML/CSS</div>
+                </div>
             </div>
         </section>
 
         <section id="projetos-academicos">
             <h2>Projetos Acadêmicos</h2>
             
-            <h3>Provas Práticas</h3>
+            <h3>📝 Provas Práticas</h3>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>PP1</h3>
-                    <p>Primeira Prova Prática do bootcamp. Conceitos fundamentais de programação em Python.</p>
+                    <h4>PP1 - Primeira Prova Prática</h4>
+                    <p>Conceitos fundamentais de programação em Python. Introdução a variáveis, tipos de dados e operações básicas.</p>
                     <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/PP1" class="project-link">Ver Projeto →</a>
                     <div class="tech-list">
                         <span class="tech-tag">Python</span>
@@ -252,8 +328,8 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>PP2</h3>
-                    <p>Segunda Prova Prática. Aprofundamento em estruturas de dados e lógica de programação.</p>
+                    <h4>PP2 - Segunda Prova Prática</h4>
+                    <p>Aprofundamento em estruturas de dados e lógica de programação. Strings, listas e operações.</p>
                     <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/PP2" class="project-link">Ver Projeto →</a>
                     <div class="tech-list">
                         <span class="tech-tag">Python</span>
@@ -261,8 +337,8 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>PP3</h3>
-                    <p>Terceira Prova Prática. Desenvolvimento de algoritmos mais complexos.</p>
+                    <h4>PP3 - Terceira Prova Prática</h4>
+                    <p>Desenvolvimento de algoritmos mais complexos e manipulação avançada de estruturas de dados.</p>
                     <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/PP3" class="project-link">Ver Projeto →</a>
                     <div class="tech-list">
                         <span class="tech-tag">Python</span>
@@ -270,8 +346,8 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>PP4</h3>
-                    <p>Quarta Prova Prática (28-04). Consolidação de conhecimentos do semestre.</p>
+                    <h4>PP4 - Quarta Prova Prática</h4>
+                    <p>Consolidação de conhecimentos do semestre. Aplicação prática de conceitos avançados (28-04-26).</p>
                     <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/PP4%2028-04" class="project-link">Ver Projeto →</a>
                     <div class="tech-list">
                         <span class="tech-tag">Python</span>
@@ -279,20 +355,29 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>PP5</h3>
-                    <p>Quinta Prova Prática. Avaliação final de competências desenvolvidas.</p>
+                    <h4>PP5 - Quinta Prova Prática</h4>
+                    <p>Avaliação final de competências desenvolvidas. Integração de todos os conceitos aprendidos.</p>
                     <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/PP5" class="project-link">Ver Projeto →</a>
+                    <div class="tech-list">
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h4>PP6 - Sexta Prova Prática</h4>
+                    <p>Avaliação adicional com foco em resolução de problemas reais e aplicação prática de conhecimentos.</p>
+                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/PP6" class="project-link">Ver Projeto →</a>
                     <div class="tech-list">
                         <span class="tech-tag">Python</span>
                     </div>
                 </div>
             </div>
 
-            <h3>Listas de Exercícios</h3>
+            <h3>💪 Listas de Exercícios</h3>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>if & else pt.1</h3>
-                    <p>Primeira parte de exercícios sobre estruturas condicionais. Fundamentos essenciais.</p>
+                    <h4>if & else - Parte 1</h4>
+                    <p>Primeira parte de exercícios sobre estruturas condicionais. Fundamentos essenciais de lógica.</p>
                     <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/EXERC%C3%8DCIOS%20if%20%26%20else%20pt.1%2004-03-26" class="project-link">Ver Exercícios →</a>
                     <div class="tech-list">
                         <span class="tech-tag">Python</span>
@@ -301,8 +386,8 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>if & else pt.2</h3>
-                    <p>Segunda parte de exercícios sobre estruturas condicionais. Casos mais avançados.</p>
+                    <h4>if & else - Parte 2</h4>
+                    <p>Segunda parte com casos mais avançados e combinações de estruturas condicionais.</p>
                     <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/EXERC%C3%8DCIOS%20if%20%26%20else%20pt.2%2011-03" class="project-link">Ver Exercícios →</a>
                     <div class="tech-list">
                         <span class="tech-tag">Python</span>
@@ -311,8 +396,8 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>whileTrue SALA</h3>
-                    <p>Exercícios sobre loops e estruturas repetitivas com while. Pratica em sala de aula.</p>
+                    <h4>while True - Sala</h4>
+                    <p>Exercícios sobre loops e estruturas repetitivas com while. Prática em sala de aula.</p>
                     <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/EXERC%C3%8DCIOS%20whileTrue%20SALA%2025-03-26" class="project-link">Ver Exercícios →</a>
                     <div class="tech-list">
                         <span class="tech-tag">Python</span>
@@ -321,8 +406,8 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>def SALA (29-04)</h3>
-                    <p>Exercícios sobre definição e uso de funções. Prática em sala (29-04-26).</p>
+                    <h4>def SALA - 29-04-26</h4>
+                    <p>Exercícios sobre definição e uso de funções. Prática em sala com exemplos práticos.</p>
                     <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/EXERC%C3%8DCIOS%20def%20SALA%2029-04-26" class="project-link">Ver Exercícios →</a>
                     <div class="tech-list">
                         <span class="tech-tag">Python</span>
@@ -331,8 +416,8 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>def SALA (06-05)</h3>
-                    <p>Exercícios sobre funções com mais complexidade. Prática avançada (06-05-26).</p>
+                    <h4>def SALA - 06-05-26</h4>
+                    <p>Exercícios sobre funções com maior complexidade. Prática avançada e casos de uso reais.</p>
                     <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/EXERC%C3%8DCIOS%20def%20SALA%2006-05-26" class="project-link">Ver Exercícios →</a>
                     <div class="tech-list">
                         <span class="tech-tag">Python</span>
@@ -341,11 +426,11 @@
                 </div>
             </div>
 
-            <h3>Revisões</h3>
+            <h3>✅ Revisões e Correções</h3>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>Correção Prova Real</h3>
-                    <p>Revisão e correção de provas reais aplicadas em sala. Análise detalhada de erros e soluções.</p>
+                    <h4>Correção de Prova Real</h4>
+                    <p>Revisão e correção de provas reais aplicadas em sala. Análise detalhada de erros e soluções otimizadas.</p>
                     <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/CorreçãoProvaReal" class="project-link">Ver Correções →</a>
                     <div class="tech-list">
                         <span class="tech-tag">Python</span>
@@ -365,16 +450,17 @@
                 <span class="tech-tag">CSS</span>
                 <span class="tech-tag">GitHub Pages</span>
             </div>
-            <p style="margin-top: 20px; color: #b0b0b0;">Estou sempre aprendendo e explorando novas tecnologias para expandir meus conhecimentos em desenvolvimento de software.</p>
+            <p style="margin-top: 20px; color: #b0b0b0;">Estou sempre aprendendo e explorando novas tecnologias para expandir meus conhecimentos em desenvolvimento de software. Meu foco está em construir uma base sólida em Python enquanto aprendo sobre versionamento de código e boas práticas de desenvolvimento.</p>
         </section>
 
         <footer>
-            <p style="font-weight: 500;">Vamos nos conectar!</p>
+            <p style="font-weight: 600;">Vamos nos conectar!</p>
             <div class="social-links">
-                <a href="https://github.com/yuricamargoC3U8" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/yuri-goelzer-de-camargo-466bb13b4/?skipRedirect=true" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yuricamargoC3U8" target="_blank">🐙 GitHub</a>
+                <a href="https://www.linkedin.com/in/yuri-goelzer-de-camargo-466bb13b4/?skipRedirect=true" target="_blank">💼 LinkedIn</a>
+                <a href="https://sites.google.com/view/siteparaconsultaprofissional/início" target="_blank">🌐 Portfólio Profissional</a>
             </div>
-            <p style="margin-top: 20px; font-size: 0.9em;">© 2026 Yuri Camargo | Desenvolvido com HTML, CSS e GitHub Pages</p>
+            <p style="margin-top: 20px; font-size: 0.9em;">© 2026 Yuri Camargo | Desenvolvido com HTML, CSS e GitHub Pages | Repositório: <a href="https://github.com/yuricamargoC3U8/Projetos" style="color: #4a9eff; text-decoration: none;">yuricamargoC3U8/Projetos</a></p>
         </footer>
     </div>
 </body>
